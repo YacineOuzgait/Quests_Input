@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Developer } from '../models/developer.model';
+import { Skill } from '../models/skill.model';
 
 @Component({
   selector: 'app-developer',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeveloperComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  developerToHandle!: Developer;
 
-  ngOnInit() {
-  }
+  skillName: string = '';
+
+  constructor() {}
+
+  ngOnInit() {}
+
 
 }

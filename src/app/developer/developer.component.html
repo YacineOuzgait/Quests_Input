@@ -1,3 +1,9 @@
-<p>
-  developer works!
-</p>
+
+<h2>{{  developerToHandle.lastName }}</h2>
+<h2>{{  developerToHandle.firstName }}</h2>
+<h2>{{  developerToHandle.age }}</h2>
+<h2>{{  developerToHandle.gender }}</h2>
+<h2>{{  developerToHandle.bio }}</h2>
+
+<app-skill *ngFor="let skill of developerToHandle.skills" 
+[skillToHandle]="skill"></app-skill>
